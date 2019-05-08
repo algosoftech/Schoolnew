@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">School</string>
+    <string name="title_activity_home">School App</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello Holiday fragment</string>
+    <string name="title_activity_bus_route">Map</string>
+    <string name="date_from_label">From Date</string>
+    <string name="date_to_label">To date</string>
+    <string name="click_image_text">Capture Image</string>
+
+
+</resources>

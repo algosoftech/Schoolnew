@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.algosoft.gov.school.Teacher.Attendance">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Toolbar_attendance"
+        android:layout_width="match_parent"
+        android:background="@color/colorYellow"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/Image_AttendanceBack"
+            android:layout_width="25dp"
+            android:src="@drawable/back_black_24dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:text="Attendance"
+            android:textSize="20dp"
+            android:typeface="sans"
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:textSize="18dp"
+            android:id="@+id/Text_Class"
+            android:layout_marginLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Class" />
+
+        <LinearLayout
+            android:layout_below="@id/Text_Class"
+            android:id="@+id/liner_Class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <Spinner
+                android:id="@+id/Class_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:autofillHints="Select"
+                android:spinnerMode="dropdown">
+
+            </Spinner>
+        </LinearLayout>
+
+        <TextView
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/Text_section"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/liner_Class"
+            android:text="Section" />
+
+        <LinearLayout
+            android:layout_below="@id/Text_section"
+            android:id="@+id/liner_Section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <Spinner
+                android:id="@+id/Section_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:autofillHints="Select"
+                android:spinnerMode="dropdown">
+
+            </Spinner>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Button_okAttendance"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/shapebutton"
+            android:text="ok"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/liner_Section"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

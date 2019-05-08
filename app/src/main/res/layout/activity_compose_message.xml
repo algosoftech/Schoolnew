@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Teacher.ComposeMessage">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Toolbar_notification"
+        android:layout_width="match_parent"
+        android:background="@color/colorYellow"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/back_msg_comp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_black_24dp"
+            android:background="@color/colorYellow"/>
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:text="Compose Message"
+            android:textSize="20dp"
+            android:typeface="sans"
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen5">
+        <LinearLayout
+            android:layout_weight="1.9"
+            android:id="@+id/Linear_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:layout_alignParentLeft="true">
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="Select class"/>-->
+                <Spinner
+                    android:id="@+id/SpinnerClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight=".5"
+            android:layout_marginStart="4dp"
+            android:id="@+id/Linear_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:layout_alignParentRight="true">
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="Select section"/>-->
+        <Spinner
+            android:id="@+id/SpinnerSection"
+            android:layout_width="match_parent"
+            android:spinnerMode="dropdown"
+            android:layout_height="wrap_content"
+            android:autofillHints="Select section">
+        </Spinner>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/TextView_selectAll"
+            android:paddingRight="@dimen/dimen5"
+            android:layout_marginStart="@dimen/dimen5"
+            android:layout_weight=".3"
+            android:layout_width="wrap_content"
+            android:text="All Student"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/shapyellow"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/parent_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scrollBarCommentWithPost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:isScrollContainer="false"
+            android:scrollbars="none">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dimen10"
+                    android:layout_marginBottom="@dimen/dimen10"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view"
+                    android:orientation="vertical"
+                    android:layout_alignParentBottom="true">
+                    <TextView
+                        android:id="@+id/noDataMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen30"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="No comment added yet!!"
+                        android:visibility="gone"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/comment_rec_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/dimen70"
+                        android:layout_weight="1">
+
+                    </android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="0"
+            android:background="@color/colorYellow"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/commenttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape"
+                android:paddingLeft="@dimen/dimen20"
+                android:paddingBottom="@dimen/dimen10"
+                android:paddingTop="@dimen/dimen10"
+                android:paddingRight="@dimen/dimen20"
+                android:textSize="@dimen/scale14"
+                android:layout_margin="@dimen/dimen5"
+                android:maxLines="4"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="textMultiLine|textCapSentences"
+                android:hint="Type your message" />
+
+            <ImageButton
+                android:id="@+id/send"
+                android:layout_width="@dimen/dimen40"
+                android:layout_height="@dimen/dimen40"
+                android:layout_margin="@dimen/dimen5"
+                android:background="@color/colorYellow"
+                android:src="@drawable/ic_send_msg"
+                android:layout_weight="0" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

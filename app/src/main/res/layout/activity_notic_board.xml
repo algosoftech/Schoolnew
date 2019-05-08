@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.algosoft.gov.school.Teacher.NoticBoard">
+   <android.support.v7.widget.Toolbar
+       android:id="@+id/Toolbar_NoticeBoard"
+       android:layout_width="match_parent"
+       android:background="@color/colorYellow"
+       android:layout_height="wrap_content">
+      <ImageView
+          android:id="@+id/Image_Notice_back"
+          android:layout_width="25dp"
+          android:src="@drawable/back_black_24dp"
+          android:layout_height="25dp" />
+      <TextView
+          android:layout_marginLeft="40dp"
+          android:layout_width="wrap_content"
+          android:text="Notice Board"
+          android:textSize="20dp"
+          android:typeface="sans"
+          android:textColor="@color/colorBlack"
+          android:layout_height="wrap_content" />
+   </android.support.v7.widget.Toolbar>
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/RecyclerNotice"
+       android:layout_width="match_parent"
+       android:scrollbars="vertical"
+       android:layout_below="@+id/Toolbar_NoticeBoard"
+       android:layout_height="match_parent">
+
+   </android.support.v7.widget.RecyclerView>
+
+   <ProgressBar
+       android:layout_width="wrap_content"
+       android:layout_centerVertical="true"
+       android:layout_centerHorizontal="true"
+       android:visibility="gone"
+       android:layout_height="wrap_content" />
+
+   <TextView
+       android:id="@+id/alert_tv"
+       android:layout_width="wrap_content"
+       android:layout_centerVertical="true"
+       android:layout_centerHorizontal="true"
+       android:text="No new notice Found"
+       android:typeface="serif"
+       android:textColor="@android:color/black"
+       android:visibility="gone"
+       android:textAppearance="?android:textAppearanceLarge"
+       android:layout_height="wrap_content" />
+</RelativeLayout>

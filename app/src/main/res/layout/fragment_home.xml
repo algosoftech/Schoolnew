@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.algosoft.gov.school.Fragment.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linear_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen10"
+        android:background="@color/colorYellow">
+
+        <LinearLayout
+            android:id="@+id/after_attendance_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <TextView
+        android:id="@+id/Text_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textSize="@dimen/scale18"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        android:text="Hello"
+        android:lines="2"
+        android:padding="5dp"
+        android:typeface="serif" />
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/picktime_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/Text_Name"
+            android:orientation="horizontal"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="5dp">
+            <!--<Spinner-->
+                <!--android:id="@+id/board_spinner"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="10dp"-->
+                <!--android:drawableRight="@drawable/down_arrow"-->
+                <!--android:text="01 AM to 02PM"/>-->
+        </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/before_attendance_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_grad_layout"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/ask_attendance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/scale18"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:text="Hello Teacher, are you present today? "
+                android:layout_gravity="center"
+                android:lines="2"
+                android:padding="5dp"
+                android:typeface="serif" />
+    <RadioGroup
+        android:id="@+id/radioGroup_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:inputType="text"
+        android:paddingRight="5dp"
+        android:paddingBottom="@dimen/dimen10"
+        android:orientation="vertical" >
+        <RadioButton
+            android:id="@+id/radio_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen40"
+            android:typeface="sans"
+            android:text="Yes"
+            android:textSize="@dimen/scale14" />
+
+        <RadioButton
+            android:id="@+id/radio_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen40"
+            android:typeface="sans"
+            android:text="No"
+            android:textSize="@dimen/scale14"/>
+    </RadioGroup>
+    </LinearLayout>
+    <!--</LinearLayout>-->
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclerHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/linear_image"
+        android:alpha="0.5"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"/>
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.algosoft.gov.school.Teacher.ViewAttendance">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Toolbar_viewattendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorYellow">
+
+        <ImageView
+            android:id="@+id/Image_ViewAttendance"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text=" View Attendance"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            android:typeface="sans" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:textSize="18dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/Text_Class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Class" />
+
+        <LinearLayout
+            android:layout_below="@id/Text_Class"
+            android:id="@+id/liner_Class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <Spinner
+                android:id="@+id/Class_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:autofillHints="Select"
+                android:spinnerMode="dropdown">
+
+            </Spinner>
+        </LinearLayout>
+
+        <TextView
+            android:textSize="18dp"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/Text_section"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/liner_Class"
+            android:text="Section" />
+
+        <LinearLayout
+            android:layout_below="@id/Text_section"
+            android:id="@+id/liner_Section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <Spinner
+                android:id="@+id/Section_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:autofillHints="Select"
+                android:spinnerMode="dropdown">
+
+            </Spinner>
+        </LinearLayout>
+
+        <TextView
+            android:textSize="18dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/Text_date"
+            android:layout_below="@+id/liner_Section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Date" />
+
+        <LinearLayout
+            android:layout_below="@id/Text_date"
+            android:id="@+id/liner_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:orientation="vertical">
+            <EditText
+                android:inputType="date"
+                android:id="@+id/Edit_SelectFrom1"
+                android:layout_width="match_parent"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/calendar"
+                android:hint="Tap to select Date" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/Button_ViewAttendance"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/shapebutton"
+            android:text="ok"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/Text_date"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

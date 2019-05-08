@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/Linear"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="60dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp"
+            android:src="@drawable/studentprofile"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorYellow"/>
+        <!--<ImageView-->
+            <!--andrbackgroundNewound="@drawable/shapeimage"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:id="@+id/Image_Student"-->
+            <!--android:scaleType="fitEnd"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp" />-->
+        <LinearLayout
+            android:layout_marginStart="20dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20dp"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/Text_Name"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:padding="5dp"
+            android:layout_height="wrap_content" />
+            <TableRow
+            android:layout_marginTop="10dp"
+            android:id="@+id/Check_AP"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+            <TextView
+                android:id="@+id/Text_present"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:text="Present"
+                android:clickable="true"
+                android:textColor="@color/colorBlack"
+                android:typeface="sans"
+                android:textSize="18dp"
+                android:background="@color/colorgray"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/Text_absent"
+                android:layout_marginStart="5dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlack"
+                android:typeface="sans"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:background="@color/colorgray"
+                android:layout_width="match_parent"
+                android:text="Absent"
+                android:layout_height="wrap_content" />
+            <!--<TextView-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:text="Present"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<TextView-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:text="Present"-->
+                <!--android:layout_height="wrap_content" />-->
+            </TableRow>
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

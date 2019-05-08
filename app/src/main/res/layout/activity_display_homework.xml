@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Teacher.DisplayHomework"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_hw"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorYellow">
+        <ImageButton
+            android:id="@+id/hw_assign_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorYellow"
+            android:padding="@dimen/dimen5"
+            android:src="@drawable/back_black_24dp" />
+        <TextView
+            android:id="@+id/hw_assign_title"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/calendar_bg">
+        <TextView
+            android:id="@+id/search_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlue"
+            android:layout_margin="@dimen/dimen10"
+            android:text="10 search result found "
+            android:textSize="@dimen/scale14"/>
+    </LinearLayout>
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2dp"-->
+        <!--android:layout_marginBottom="2dp"-->
+        <!--android:background="@color/graycolor"/>-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recView_HwList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dimen5">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

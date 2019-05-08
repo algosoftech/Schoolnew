@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.algosoft.gov.school">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.NewCalendar"></activity>
+        <activity android:name=".Activity.FilterActivity" />
+        <activity android:name=".Teacher.DynamicTimeTable" />
+        <activity android:name=".Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Teacher.ComposeMessage" />
+        <activity android:name=".Teacher.HomeworkDetails" />
+        <activity android:name=".Teacher.DisplayHomework" />
+        <activity
+            android:name=".Activity.Login"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Student" />
+        <activity
+            android:name=".Activity.Home"
+            android:configChanges="keyboardHidden|screenSize"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" />
+        <activity android:name=".Activity.Loginpassword" /> <!-- <activity -->
+        <!-- android:name=".Teacher.Attendance" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name=".Teacher.HomeWork"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Teacher.Syllabus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Teacher.Assignment"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Teacher.Notification" />
+        <activity
+            android:name=".Teacher.Message"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Teacher.TimeTable"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Teacher.ListNotification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Teacher.NoticBoard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Scanner"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <activity
+            android:name=".Teacher.AttendanceOk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Teacher.GiveHomework"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Teacher.SearchHomework"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Teacher.GiveAssignment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Teacher.ViewAttendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Teacher.SearchAssignment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Teacher.StudentReply"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Teacher.ViewAttendance2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Teacher.ListAttendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Parents.School"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Parents.Attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Parents.AddChild"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Parents.MyCalender"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Parents.Teacherslist"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Parents.Fee"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Parents.MyProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Parents.Homework"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Parents.Result"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Parents.NoticeBoard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Parents.Notificationparents"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Parents.Message"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Parents.Syllabus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Parents.Timetable"
+            android:screenOrientation="portrait" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Parents.BusRoute"
+            android:label="@string/title_activity_bus_route" />
+        <activity
+            android:name=".Parents.FeeDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Parents.SecondChild"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.GalleryImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Parents.FeeMonthDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Teacher.DetailSyllabus"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity.TestActivity" />
+        <activity
+            android:name=".Activity.NewsDetailActivity"
+            android:screenOrientation="portrait" /> <!-- <activity -->
+        <!-- android:name=".Teacher.NewAttendanceActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name=".Teacher.TakeAttendanceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.CalendarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ViewFeedbackActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- <service -->
+        <!-- android:name="com.google.firebase.messaging.FirebaseMessagingService"> -->
+        <!-- android:exported="false"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.firebase.MESSAGING_EVENT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="defd6b18e1b85cf9a94e59a2cc691bba001a7286" />
+    </application>
+
+</manifest>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.algosoft.gov.school.Teacher.ViewAttendance2">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Toolbar_viewattendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorYellow">
+
+        <ImageView
+            android:id="@+id/Image_ViewAttendance"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text=" View Attendance"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/date_tv"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21/11/2018" />
+    </android.support.v7.widget.Toolbar>
+    <!--<ProgressBar-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="120dp" />-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclerStudentAttendance"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

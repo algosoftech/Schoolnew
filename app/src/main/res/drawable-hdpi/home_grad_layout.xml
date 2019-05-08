@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#CCFFFFFF"/>
+    <!--#FFE4B5-->
+    <!--<stroke android:width="3dp"-->
+    <!--android:color="#ff000000"-->
+    <!--/>-->
+    <!--<gradient-->
+    <!--android:type="linear"-->
+    <!--android:angle="135"-->
+    <!--android:startColor="@color/button_bg"-->
+    <!--android:endColor="@color/white" />-->
+    <gradient
+        android:type="radial"
+        android:gradientRadius="700%p"
+        android:startColor="@color/colorWhite"
+        android:endColor="@color/shimmer_color_for_image" />
+
+    <padding android:left="1dp"
+        android:top="1dp"
+        android:right="1dp"
+        android:bottom="1dp"
+        />
+
+    <corners android:bottomRightRadius="7dp" android:bottomLeftRadius="7dp"
+    android:topLeftRadius="7dp" android:topRightRadius="7dp"/>
+</shape>
+    <!--100% — FF-->
+    <!--95% — F2-->
+    <!--90% — E6-->
+    <!--85% — D9-->
+    <!--80% — CC-->
+    <!--75% — BF-->
+    <!--70% — B3-->
+    <!--65% — A6-->
+    <!--60% — 99-->
+    <!--55% — 8C-->
+    <!--50% — 80-->
+    <!--45% — 73-->
+    <!--40% — 66-->
+    <!--35% — 59-->
+    <!--30% — 4D-->
+    <!--25% — 40-->
+    <!--20% — 33-->
+    <!--15% — 26-->
+    <!--10% — 1A-->
+    <!--5% — 0D-->
+    <!--0% — 00-->

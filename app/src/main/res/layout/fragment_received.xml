@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.algosoft.gov.school.Fragment.ReceivedFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:id="@+id/RecyclerReceiveddetails"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/alert_text"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:text="No Data Found"
+        android:visibility="gone"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_height="wrap_content" />
+
+
+</FrameLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shimmer_color_for_image"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen5"
+    android:background="@drawable/transparent_layout_white"
+    android:padding="@dimen/dimen10">
+    <TextView
+        android:id="@+id/hw_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="2dp"
+        android:text="HomeWork Title"
+        android:textColor="@color/colorBlue"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+    <LinearLayout
+        android:id="@+id/date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hw_title"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:textSize="@dimen/scale10"
+            android:textColor="@color/colorBlue"
+            android:text="11-02-2019" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:textColor="@color/colorBlue"
+            android:textSize="@dimen/scale12"
+            android:layout_marginLeft="@dimen/dimen5"
+            android:layout_marginRight="@dimen/dimen5"
+            android:text="to" />
+
+        <TextView
+            android:id="@+id/end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:textSize="@dimen/scale10"
+            android:textColor="@color/colorBlue"
+            android:text="12-02-2019" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/hw_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_layout"
+        android:padding="2dp"
+        android:lines="2"
+        android:alpha="0.5"
+        android:textColor="@color/colorBlue"
+        android:textSize="@dimen/scale14"
+        android:ellipsize="end"
+        android:text="HomeWork description HomeWork description HomeWork
+         description HomeWork description HomeWork description HomeWork
+         description HomeWork description"/>
+    <!--<ImageButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/ic_attachment"-->
+        <!--android:layout_below="@+id/hw_desc"-->
+        <!--android:background="null"-->
+        <!--android:layout_alignParentRight="true"/>-->
+</RelativeLayout>
+</LinearLayout>

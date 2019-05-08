@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:color="#ffd459"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/Home"
+            android:icon="@drawable/home"
+            android:title="Home">
+        </item>
+        <item android:id="@+id/MyPofile"
+            android:title="My Profile"
+            android:icon="@drawable/ic_person_black_24dp">
+        </item>
+
+        <item android:id="@+id/OwnAttendance"
+            android:title="My Attendance"
+            android:icon="@drawable/ic_attandance">
+        </item>
+        <!--<item android:id="@+id/News"-->
+            <!--android:title="News"-->
+            <!--android:icon="@mipmap/foldednews">-->
+        <!--</item>-->
+        <!--<item android:id="@+id/Special"-->
+            <!--android:title="Special Offers"-->
+            <!--android:icon="@mipmap/gift">-->
+        <!--</item>-->
+        <item
+            android:id="@+id/Gallery"
+            android:title="Gallery"
+            android:icon="@mipmap/gallery">
+        </item>
+        <!--<item-->
+            <!--android:id="@+id/Achievement"-->
+            <!--android:title="Achievements"-->
+            <!--android:icon="@mipmap/award">-->
+        <!--</item>-->
+        <item android:id="@+id/Leave"
+            android:title="Leave Request"
+            android:icon="@mipmap/hotel">
+        </item>
+        <item
+            android:id="@+id/Rate"
+            android:title="Rate Us"
+            android:icon="@mipmap/star">
+        </item>
+        <item android:id="@+id/feedback"
+            android:title="Feedback"
+            android:icon="@drawable/ic_notifications_black_24dp">
+        </item>
+        <item
+            android:id="@+id/Update"
+            android:title="Update App(version: 2.1.4)"
+            android:icon="@mipmap/updatearrows">
+        </item>
+        <item
+            android:id="@+id/Like"
+            android:title="Like Us On Facebook"
+            android:icon="@mipmap/facebooklogobutton"
+            >
+        </item>
+        <item
+            android:id="@+id/Logout"
+            android:title="Logout"
+            android:icon="@mipmap/logoutsymbol">
+
+        </item>
+
+
+
+    </group>
+
+
+
+</menu>

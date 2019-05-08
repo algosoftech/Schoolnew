@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/shapeperiod"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Text_day1"
+            android:padding="@dimen/dimen5"
+            android:gravity="center"
+            android:text="Sunday"
+            android:textColor="@color/colorBlue"
+            android:background="@drawable/shapetimetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/Text_day2"
+            android:padding="@dimen/dimen5"
+            android:gravity="center"
+            android:text="Sunday"
+            android:textColor="@color/colorBlue"
+            android:background="@drawable/shapetimetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/Text_day3"
+            android:padding="@dimen/dimen5"
+            android:gravity="center"
+            android:text="Sunday"
+            android:textColor="@color/colorBlue"
+            android:background="@drawable/shapetimetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/Text_day4"
+            android:padding="@dimen/dimen5"
+            android:gravity="center"
+            android:text="Sunday"
+            android:textColor="@color/colorBlue"
+            android:background="@drawable/shapetimetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/Text_day5"
+            android:padding="@dimen/dimen5"
+            android:gravity="center"
+            android:text="Sunday"
+            android:textColor="@color/colorBlue"
+            android:background="@drawable/shapetimetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/Text_day6"
+            android:padding="@dimen/dimen5"
+            android:gravity="center"
+            android:text="Sunday"
+            android:textColor="@color/colorBlue"
+            android:background="@drawable/shapetimetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/Text_day7"
+            android:padding="@dimen/dimen5"
+            android:gravity="center"
+            android:text="Sunday"
+            android:textColor="@color/colorBlue"
+            android:background="@drawable/shapetimetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/Text_day8"
+            android:padding="@dimen/dimen5"
+            android:gravity="center"
+            android:text="Sunday"
+            android:textColor="@color/colorBlue"
+            android:background="@drawable/shapetimetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/Text_day9"
+            android:padding="@dimen/dimen5"
+            android:gravity="center"
+            android:text="Sunday"
+            android:textColor="@color/colorBlue"
+            android:background="@drawable/shapetimetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

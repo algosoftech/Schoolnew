@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen10"
+        android:layout_marginTop="@dimen/dimen10"
+        android:layout_marginRight="@dimen/dimen10"
+        android:elevation="10dp"
+        android:padding="@dimen/dimen10"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/scale20">
+
+            <TextView
+                android:id="@+id/att_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentLeft="true"
+                android:text="01-02-2019"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/scale14" />
+
+            <TextView
+                android:id="@+id/att_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/att_date"
+                android:text="10:02:20"
+                android:textSize="@dimen/scale14" />
+
+            <LinearLayout
+                android:id="@+id/card_att_type"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorYellow">
+
+                <TextView
+                    android:id="@+id/att_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="13dp"
+                    android:gravity="center"
+                    android:text="Present"
+                    android:textColor="@color/graycolor"
+                    android:textSize="@dimen/scale18" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

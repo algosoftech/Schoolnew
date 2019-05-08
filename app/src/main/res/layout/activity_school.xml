@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.algosoft.gov.school.Parents.School">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Toolbar_School"
+        android:layout_width="match_parent"
+        android:background="@color/colorYellow"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/Image_backSchool"
+            android:layout_width="25dp"
+            android:src="@drawable/back_black_24dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:text=" School"
+            android:textSize="22dp"
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+<RelativeLayout
+    android:id="@+id/Relative"
+    android:layout_width="match_parent"
+    android:background="@color/colorYellow"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@drawable/background"
+        app:civ_border_color="@color/colorYellow"
+        app:civ_border_width="2dp" />
+    <TextView
+        android:layout_below="@id/profile_image"
+        android:text="Manav Rachna Public School"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="18dp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/Address"
+            android:layout_width="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_height="40dp"
+            android:src="@drawable/location"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorYellow"/>
+
+        <TextView
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="Address"
+            android:textColor="@color/colorBlack" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/AddressSchool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="JSS College, Noida-62"
+        android:autoLink="all"
+        android:layout_marginStart="20dp"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/Phone"
+            android:layout_width="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_height="40dp"
+            android:src="@drawable/call"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorYellow"/>
+        <TextView
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="Phone"
+            android:textColor="@color/colorBlack" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="9898765610"
+        android:autoLink="all"
+        android:layout_marginStart="20dp"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/SchoolEmail"
+            android:layout_width="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/envelope"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorYellow"/>
+        <TextView
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="Email"
+            android:textColor="@color/colorBlack" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="school@gmail.com"
+        android:autoLink="all"
+        android:textColor="@color/colorgray"
+        android:layout_marginStart="20dp"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/Websiteimage"
+            android:layout_width="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_height="40dp"
+            android:src="@drawable/world"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorYellow"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="Website"
+            android:textColor="@color/colorBlack" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/Website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="http://school.com"
+        android:autoLink="all"
+        android:layout_marginStart="20dp"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+</LinearLayout>

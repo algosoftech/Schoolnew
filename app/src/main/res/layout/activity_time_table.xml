@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.algosoft.gov.school.Teacher.TimeTable">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Toolbar_syllabus"
+        android:layout_width="match_parent"
+        android:background="@color/colorYellow"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/Image_time_back"
+            android:layout_width="25dp"
+            android:src="@drawable/back_black_24dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:text="Time Table"
+            android:textSize="20dp"
+            android:typeface="sans"
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:id="@+id/Tablerow_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorYellow"
+                    android:padding="10dp"
+                    android:text="  Period"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlue"
+                    android:padding="10dp"
+                    android:text="Monday"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlue"
+                    android:padding="10dp"
+                    android:text="Tuesday"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlue"
+                    android:padding="10dp"
+                    android:text="Wednesday"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlue"
+                    android:padding="10dp"
+                    android:text="Thursday"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlue"
+                    android:padding="10dp"
+                    android:text="   Friday  "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlue"
+                    android:padding="10dp"
+                    android:text="Saturday"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Tablerow_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Tablerow_one">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlue"
+                    android:padding="10dp"
+                    android:text="1 period"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Physics"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="  English "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:text="    Maths     "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="                 "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text=" Drawing "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="   Hindi   "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Tablerow_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Tablerow_two">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlue"
+                    android:padding="10dp"
+                    android:text="2 period"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Physics"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="  English "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="   Science   "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="                 "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="  English  "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="  Drawing"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Tablerow_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Tablerow_three">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlue"
+                    android:padding="11dp"
+                    android:gravity="center"
+                    android:text=" 3 Lunch"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:padding="10dp"
+                    android:text="              "
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:padding="10dp"
+                    android:text="               "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:padding="10dp"
+                    android:text="                   "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="                 "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:padding="10dp"
+                    android:text="                 "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:padding="10dp"
+                    android:text="                 "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp" />
+
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/Tablerow_five"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/Tablerow_four">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlue"
+                    android:padding="10dp"
+                    android:text="4 period"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Physics"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="  English "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="   Science   "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="                  "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="  English "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text=" English "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/Tablerow_six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Tablerow_five">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlue"
+                    android:padding="10dp"
+                    android:text="5 period"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Physics"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="  English "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="   Science   "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="                  "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="  English "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="  English  "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/Tablerow_seven"
+                android:layout_below="@id/Tablerow_six"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlue"
+                    android:padding="10dp"
+                    android:text="  Games"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Physics"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text=" English  "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="   Science   "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="                  "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="  English "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="  English  "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/Tablerow_eight"
+                android:layout_below="@id/Tablerow_seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlue"
+                    android:padding="10dp"
+                    android:text="6 period"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="              "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="                "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="                   "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="                  "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="                 "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="                 "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp" />
+
+            </TableRow>
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+
+</TableLayout>

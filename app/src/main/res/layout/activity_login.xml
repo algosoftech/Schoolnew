@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loginmain"
+    tools:context="com.algosoft.gov.school.Activity.Login">
+
+
+    <RelativeLayout
+        android:id="@+id/Image_login"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/loginbackground">
+
+        <ImageView
+            android:id="@+id/Login"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen60"
+            android:background="@drawable/pen" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/TextMain"
+            android:layout_below="@id/Login"
+            android:gravity="center"
+            android:text="We Connect School,Teacher &amp; Parents"
+            android:textColor="@color/colorBlack"
+            android:padding="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/Linear_login_ok"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/TextMain"
+            android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/dimen20"
+            android:hint="Enter your six digit school Id"
+            android:maxLength="6"
+            android:padding="12dp"
+            android:inputType="number"
+            android:textSize="15dp"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/shape"
+            android:id="@+id/Edit_SchoolNo" />
+
+            <Button
+                android:id="@+id/Button_School"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/shapebutton"
+                android:text="Ok"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/liner_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Linear_login_ok"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <Spinner
+                android:id="@+id/Login_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:autofillHints="Select"
+                android:spinnerMode="dropdown">
+
+            </Spinner>
+        </LinearLayout>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

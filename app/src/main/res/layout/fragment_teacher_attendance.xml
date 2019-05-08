@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.TeacherAttendanceFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen10"
+        android:background="@android:color/white">
+        <TextView
+            android:id="@+id/date_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:padding="@dimen/dimen10"
+            android:textSize="@dimen/scale14"
+            android:layout_alignParentLeft="true"
+            android:drawablePadding="@dimen/dimen40"
+            android:drawableLeft="@drawable/ic_date_to_from"
+            android:hint="@string/date_from_label"/>
+        <TextView
+            android:id="@+id/date_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen10"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/scale14"
+            android:layout_alignParentRight="true"
+            android:hint="@string/date_to_label"
+            android:layout_marginRight="@dimen/dimen60"
+            />
+    </RelativeLayout>
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/rec_view_attendance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/dimen10">
+</android.support.v7.widget.RecyclerView>
+</LinearLayout>
+</FrameLayout>

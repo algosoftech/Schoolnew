@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "143697230963",
+    "firebase_url": "https://school-orissa.firebaseio.com",
+    "project_id": "school-orissa",
+    "storage_bucket": "school-orissa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:143697230963:android:589aa6e8a8c3204f",
+        "android_client_info": {
+          "package_name": "com.algosoft.gov.school"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "143697230963-chqngrfml9ffl6j25h51h79gaqel6804.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.algosoft.gov.school",
+            "certificate_hash": "4a86ed86ef6b794f6f5affd0e0a25381ac9cbebf"
+          }
+        },
+        {
+          "client_id": "143697230963-5nr1fr3dg2van7vj3p3he2h5tql4gu0c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAviPpD7O7_hBO21HzY_7g8_dCP6FF82tw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "143697230963-5nr1fr3dg2van7vj3p3he2h5tql4gu0c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

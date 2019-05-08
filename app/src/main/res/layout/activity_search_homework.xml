@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.algosoft.gov.school.Teacher.SearchHomework">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Toolbar_syllabus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorYellow">
+
+        <ImageView
+            android:id="@+id/Image_searchhome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen40"
+            android:text="Search Homework"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp" />
+
+    </android.support.v7.widget.Toolbar>
+<LinearLayout
+android:id="@+id/progess_layout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center"
+android:visibility="gone">
+<ProgressBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:indeterminate="true"/>
+</LinearLayout>
+<RelativeLayout
+android:id="@+id/searchHwForm_container"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginRight="@dimen/dimen15"
+android:layout_marginLeft="@dimen/dimen15"
+android:layout_marginBottom="@dimen/dimen15"
+android:layout_marginTop="@dimen/dimen30">
+
+
+<LinearLayout
+    android:id="@+id/liner_Syllabus_Class"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/Tv_Syllabus_class"
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/shape"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/CLASS_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown">
+    </Spinner>
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/liner_Syllabus_Section"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/liner_Syllabus_Class"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/shape"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <Spinner
+        android:id="@+id/SECTION_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="Select"
+        android:spinnerMode="dropdown">
+
+    </Spinner>
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/liner_Syllabus_Subject"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/liner_Syllabus_Section"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/shape"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <Spinner
+        android:id="@+id/SUBJECT_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="Select"
+        android:spinnerMode="dropdown">
+
+    </Spinner>
+</LinearLayout>
+<!--<TextView-->
+<!--android:id="@+id/Text_Title"-->
+<!--android:layout_width="match_parent"-->
+<!--android:text="Title"-->
+<!--android:layout_below="@+id/liner_Syllabus_Subject"-->
+<!--android:layout_height="wrap_content" />-->
+<EditText
+    android:id="@+id/Edit_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/liner_Syllabus_Subject"
+    android:layout_marginLeft="@dimen/dimen5"
+    android:layout_marginTop="@dimen/dimen20"
+    android:layout_marginRight="@dimen/dimen5"
+    android:background="@drawable/shape"
+    android:hint="Title"
+    android:inputType="text"
+    android:padding="@dimen/dimen5"
+    android:textColor="@color/colorBlack" />
+
+<LinearLayout
+    android:id="@+id/search_hw_date_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/Edit_title"
+    android:layout_marginLeft="@dimen/dimen5"
+    android:layout_marginTop="@dimen/dimen20"
+    android:layout_marginRight="@dimen/dimen5"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <TextView
+        android:id="@+id/Edit_From"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen10"
+        android:layout_weight="1"
+        android:background="@drawable/shape"
+        android:drawableRight="@drawable/calendar"
+        android:hint="From"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/Edit_To"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen10"
+        android:layout_weight="1"
+        android:background="@drawable/shape"
+        android:drawableRight="@drawable/calendar"
+        android:hint="To"
+        android:textColor="@color/colorBlack" />
+</LinearLayout>
+
+<Button
+    android:id="@+id/btn_hw_search"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/search_hw_date_layout"
+    android:layout_marginLeft="@dimen/dimen5"
+    android:layout_marginTop="@dimen/dimen30"
+    android:layout_marginRight="@dimen/dimen5"
+    android:background="@drawable/shapebutton"
+    android:text="Search"
+    android:textSize="@dimen/scale16"
+    android:enabled="false"
+    android:textColor="@color/colorWhite" />
+</RelativeLayout>
+    </LinearLayout>

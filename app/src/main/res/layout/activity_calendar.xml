@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.algosoft.gov.school.Activity.CalendarActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Toolbar_Calender"
+        android:layout_width="match_parent"
+        android:background="@color/colorYellow"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/Image_Calender"
+            android:layout_width="30dp"
+            android:src="@drawable/back_black_24dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:text="Calender"
+            android:textSize="20dp"
+            android:typeface="sans"
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:padding="10dp"
+        android:layout_below="@+id/Toolbar_Calender"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/holiday_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="selectFrag"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="Holidays"/>
+
+        <TextView
+            android:id="@+id/events_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="selectFrag"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="Events"/>
+
+        <TextView
+            android:id="@+id/exaination_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="selectFrag"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="Examination"/>
+    </LinearLayout>
+
+    <fragment
+    android:name="com.algosoft.gov.school.Fragment.HolidayFragment"
+    android:layout_below="@+id/linearLayout"
+    android:id="@+id/fragment_place"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+
+</RelativeLayout>

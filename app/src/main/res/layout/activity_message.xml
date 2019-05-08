@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.algosoft.gov.school.Teacher.Message">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Toolbar_notification"
+        android:layout_width="match_parent"
+        android:background="@color/colorYellow"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/btn_back_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen5"
+            android:background="@color/colorYellow"
+            android:src="@drawable/back_black_24dp" />
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:text="Message"
+            android:textSize="20dp"
+            android:typeface="sans"
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/msg_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Toolbar_notification"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimen5"
+        android:paddingRight="@dimen/dimen5"
+        android:weightSum="2"
+        android:background="@color/colorYellow">
+        <Button
+            android:id="@+id/tab_rec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorYellow"
+            android:layout_weight="1"
+            android:text="RECEIVED"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/scale16"/>
+        <Button
+            android:id="@+id/tab_sent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorYellow"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:text="SENT"
+            android:textColor="@color/graycolor"
+            android:textSize="@dimen/scale16"/>
+    </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RecyclerMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/msg_tab"
+            android:layout_marginTop="@dimen/dimen5"
+            android:scrollbars="vertical">
+
+        </android.support.v7.widget.RecyclerView>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_compose_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dimen30"
+            android:layout_marginRight="@dimen/dimen20"
+            android:src="@drawable/ic_compose_msg"
+            app:backgroundTint="@color/colorYellow" />
+    <!--</RelativeLayout>-->
+</RelativeLayout>

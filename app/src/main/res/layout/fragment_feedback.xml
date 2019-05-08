@@ -1,0 +1,378 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    tools:context="com.algosoft.gov.school.Fragment.FeedbackFragment">
+
+
+
+    <LinearLayout
+        android:id="@+id/teacherlayout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlue"
+            android:padding="8dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:gravity="center"
+            android:text="Teacher Feedback Form" />
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/spinner_teacher"
+                android:layout_width="40dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown">
+            </Spinner>
+            <Spinner
+                android:layout_marginStart="5dp"
+                android:id="@+id/spinner_Class"
+                android:layout_width="40dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown">
+            </Spinner>
+            <Spinner
+                android:layout_marginStart="5dp"
+                android:id="@+id/spinner_section"
+                android:layout_width="40dp"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown">
+            </Spinner>
+
+        </LinearLayout>
+        <TableRow
+            android:layout_margin="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:weightSum="4"
+            android:layout_height="wrap_content">
+            <TextView android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="Knowledge"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:padding="5dp"
+                android:textColor="@color/colorBlue"
+                android:layout_height="wrap_content"/>
+            <TextView android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="Very Good"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:gravity="left"
+                android:textColor="@color/colorBlue"
+                android:layout_height="wrap_content"/>
+            <TextView android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="Good"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:gravity="left"
+                android:textColor="@color/colorBlue"
+                android:layout_height="wrap_content"/>
+            <TextView android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="Poor"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:gravity="left"
+                android:textColor="@color/colorBlue"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_height="wrap_content">
+            <TextView android:layout_width="match_parent"
+                android:text="Way of teaching"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="8dp"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/Radiovery"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/RadioGood"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/RadioPoor"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_height="wrap_content">
+            <TextView android:layout_width="match_parent"
+                android:text="Knowledge about Subject"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="8dp"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/Know_one"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/Know_two"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/Know_three"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_height="wrap_content">
+            <TextView android:layout_width="match_parent"
+                android:text="Class Co-ordination"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="8dp"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/Class_one"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/Class_two"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/Class_three"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_height="wrap_content">
+            <TextView android:layout_width="match_parent"
+                android:text="Knowledge Sharing"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="8dp"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/Sharing_one"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/Sharing_two"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/Sharing_three"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/Buttonsubmit"
+                android:layout_weight="1"
+                android:background="@drawable/shapebutton"
+                android:layout_width="match_parent"
+                android:text="Submit"
+                android:textColor="@color/colorWhite"
+                android:layout_height="40dp" />
+            <Button
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:textColor="@color/colorWhite"
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/shapebutton"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:id="@+id/student_layout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/teacherlayout"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlue"
+            android:padding="8dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:gravity="center"
+            android:text="Student Feedback Form" />
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/spinner_student1"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="16dp"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown">
+            </Spinner>
+            <Spinner
+                android:layout_marginStart="5dp"
+                android:id="@+id/spinner_Class1"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="16dp"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown">
+            </Spinner>
+            <Spinner
+                android:layout_marginStart="5dp"
+                android:id="@+id/spinner_section1"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:layout_margin="16dp"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown">
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_gravity="center|top"
+            android:background="@null"
+            android:layout_margin="16dp"
+            android:layout_height="200dp">
+            <EditText
+                android:id="@+id/feedback_et"
+                android:layout_width="match_parent"
+                android:text=""
+                android:layout_weight="1"
+                android:hint="Knowledge about Subject"
+                android:gravity="left"
+                android:padding="8dp"
+                android:layout_gravity="left|top"
+                android:inputType="textNoSuggestions"
+                android:textColor="@color/colorBlack"
+                android:scrollbars="vertical"
+                android:layout_height="200dp"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/Buttonsubmit1"
+                android:layout_weight="1"
+                android:background="@drawable/shapebutton"
+                android:layout_width="match_parent"
+                android:text="Submit"
+                android:textColor="@color/colorWhite"
+                android:layout_height="40dp" />
+            <Button
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:textColor="@color/colorWhite"
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/shapebutton"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<ProgressBar
+    android:id="@+id/progressbar"
+    android:layout_width="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:visibility="gone"
+    android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="progressBarWidth">20</dimen>
+    <dimen name="backgroundProgressBarWidth">10</dimen>
+
+
+    <!--Customize layout dimension-->
+    <dimen name="dimen5">5dp</dimen>
+    <dimen name="dimen10">10dp</dimen>
+    <dimen name="dimen15">15dp</dimen>
+    <dimen name="dimen20">20dp</dimen>
+    <dimen name="dimen30">30dp</dimen>
+    <dimen name="dimen40">40dp</dimen>
+    <dimen name="dimen60">60dp</dimen>
+    <dimen name="dimen70">70dp</dimen>
+
+    <!--TextSize-->
+    <dimen name="scale10">10sp</dimen>
+    <dimen name="scale12">12sp</dimen>
+    <dimen name="scale14">14sp</dimen>
+    <dimen name="scale16">16sp</dimen>
+    <dimen name="scale18">18sp</dimen>
+    <dimen name="scale20">20sp</dimen>
+    <dimen name="message">8dp</dimen>
+</resources>

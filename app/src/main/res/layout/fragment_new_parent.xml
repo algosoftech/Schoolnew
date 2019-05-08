@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.algosoft.gov.school.Fragment.NewParentFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:background="@color/colorYellow"
+        android:id="@+id/Linear_parent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_blank_fragment" >
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="95dp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center"
+            android:layout_height="95dp"
+            android:src="@drawable/studentprofile"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorYellow"/>
+        <LinearLayout
+            android:id="@+id/LinearProfiledetails"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Kshitij Patel"
+                android:background="@drawable/shape"
+                android:textColor="@color/colorBlack"
+                android:layout_margin="8dp"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:text="5 / A"
+                android:inputType="text"
+                android:layout_margin="8dp"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="8976765432"
+                android:background="@drawable/shape"
+                android:textColor="@color/colorBlack"
+                android:layout_margin="8dp"
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text"
+        android:layout_below="@id/Linear_parent"
+        android:layout_width="match_parent"
+        android:background="@color/colorYellow"
+        android:layout_height="50dp" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclernewParents"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-35dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/text"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

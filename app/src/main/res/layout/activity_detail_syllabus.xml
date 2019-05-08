@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.algosoft.gov.school.Teacher.DetailSyllabus">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_margin="@dimen/dimen5"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/TextView1"
+            android:layout_margin="@dimen/dimen5"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:text="Class :"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="5"
+            android:layout_weight="1"
+            android:id="@+id/TextView2"
+            android:layout_margin="@dimen/dimen5"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:gravity="left"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="@dimen/dimen5"
+        android:layout_marginRight="@dimen/dimen5"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/TextView"
+            android:layout_margin="@dimen/dimen5"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:text="Subject :"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Hindi"
+            android:layout_weight="1"
+            android:id="@+id/TextView_Class"
+            android:layout_margin="@dimen/dimen5"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:gravity="left"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/RecyclerSyllabus"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

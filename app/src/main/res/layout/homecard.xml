@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RecyclerMain"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/Linear_one"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+              <android.support.v7.widget.CardView
+                  android:layout_width="150dp"
+                  android:layout_height="140dp"
+                  app:cardBackgroundColor="@color/colorWhite"
+                  app:cardCornerRadius="4dp"
+                  android:elevation="8dp"
+                  app:cardElevation="8dp">
+                  <RelativeLayout
+                      android:layout_width="150dp"
+                      android:layout_height="140dp"
+                      app:cardCornerRadius="8dp"
+                      app:cardElevation="8dp">
+
+                      <ImageView
+                          android:id="@+id/Imageattendance"
+                          android:layout_width="50dp"
+                          android:layout_height="50dp"
+                          android:layout_alignParentTop="true"
+                          android:layout_alignStart="@+id/progressBar"
+                          android:layout_marginStart="14dp"
+                          android:layout_marginTop="13dp"
+                          android:src="@drawable/attendance" />
+
+                      <TextView
+                          android:id="@+id/textattendance"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_alignStart="@+id/Imageattendance"
+                          android:layout_below="@+id/Imageattendance"
+                          android:layout_marginTop="13dp"
+                          android:text="Attendance"
+                          android:textColor="@color/colorBlack"
+                          android:textSize="15dp" />
+
+                      <ProgressBar
+                          android:id="@+id/progressBar"
+                          style="@android:style/Widget.ProgressBar.Horizontal"
+                          android:layout_width="140dp"
+                          android:layout_height="6dp"
+                          android:layout_marginLeft="4dp"
+                          android:layout_marginRight="4dp"
+                          android:layout_alignParentBottom="true"
+                          android:layout_centerHorizontal="true"
+                          android:layout_marginBottom="17dp"
+                          android:secondaryProgressTint="@color/colorYellow"
+                          android:progress="25" />
+                  </RelativeLayout>
+              </android.support.v7.widget.CardView>
+           <android.support.v7.widget.CardView
+            android:layout_marginStart="15dp"
+               android:visibility="gone"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+            <RelativeLayout
+                android:layout_width="170dp"
+                android:layout_height="150dp">
+
+                <ImageView
+                    android:id="@+id/ImageHomework"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/Barhomework"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/homework" />
+
+                <TextView
+                    android:id="@+id/textViewHomework"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/ImageHomework"
+                    android:layout_below="@+id/ImageHomework"
+                    android:layout_marginTop="11dp"
+                    android:text="Home Work"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp" />
+
+                <ProgressBar
+                    android:id="@+id/Barhomework"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="160dp"
+                    android:layout_height="8dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="17dp"
+                    android:secondaryProgressTint="@color/colorYellow"
+                    android:progress="25" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+            </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_margin="15dp"
+        android:orientation="horizontal"
+        android:id="@+id/Linear_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Linear_one">
+        <android.support.v7.widget.CardView
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+            <RelativeLayout
+                android:layout_width="170dp"
+                android:layout_height="150dp">
+
+                <ImageView
+                    android:id="@+id/ImageSyllabus"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/BarSyllabus"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/attendance" />
+
+                <TextView
+                    android:id="@+id/textViewSyllabus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/ImageSyllabus"
+                    android:layout_below="@+id/ImageSyllabus"
+                    android:layout_marginTop="13dp"
+                    android:text="Attendance"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp" />
+
+                <ProgressBar
+                    android:id="@+id/BarSyllabus"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="160dp"
+                    android:layout_height="8dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="17dp"
+                    android:secondaryProgressTint="@color/colorYellow"
+                    android:progress="25" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_marginStart="15dp"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+            <RelativeLayout
+                android:layout_width="170dp"
+                android:layout_height="150dp">
+
+                <ImageView
+                    android:id="@+id/ImageViewAttendance"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/Barhomework"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/homework" />
+
+                <TextView
+                    android:id="@+id/textViewAttendance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/ImageViewAttendance"
+                    android:layout_below="@+id/ImageViewAttendance"
+                    android:layout_marginTop="11dp"
+                    android:text="Home Work"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp" />
+
+                <ProgressBar
+                    android:id="@+id/BarViewAttendance"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="160dp"
+                    android:layout_height="8dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="17dp"
+                    android:secondaryProgressTint="@color/colorYellow"
+                    android:progress="25" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+        </RelativeLayout>

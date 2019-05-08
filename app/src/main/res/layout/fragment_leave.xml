@@ -1,0 +1,234 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.algosoft.gov.school.Fragment.LeaveFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:fillViewport="true"
+        android:id="@+id/Scroll_leave"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Scroll_leave"
+            android:background="@drawable/shape"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Text_leave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Leave Type"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:id="@+id/liner_leavetype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Text_leave"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <Spinner
+                    android:id="@+id/Leave_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:autofillHints="Select"
+                    android:spinnerMode="dropdown">
+
+                </Spinner>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Text_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/liner_leavetype"
+                android:text="From"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp" />
+
+            <RadioGroup
+                android:id="@+id/Table_radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Text_from"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/firsthalf_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="First Half" />
+
+                <RadioButton
+                    android:id="@+id/secondhalf_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="Second Half" />
+
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/linear_From"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Table_radio">
+
+                <EditText
+                    android:inputType="date"
+                    android:id="@+id/Edit_SelectFrom"
+                    android:layout_width="match_parent"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/calendar"
+                    android:hint="Tap to select Date" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/Text_To"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Edit_SelectFrom"
+                android:text="To"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp" />
+
+            <RadioGroup
+                android:id="@+id/Table_radiotwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Text_To"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/firsthalf_rb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="First Half" />
+
+                <RadioButton
+                    android:id="@+id/secondhalf_rb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="Second Half" />
+
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/linear_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Table_radio">
+
+                <EditText
+                    android:inputType="date"
+                    android:id="@+id/Edit_SelectTo"
+                    android:textSize="15dp"
+                    android:layout_width="match_parent"
+                    android:drawableRight="@drawable/calendar"
+                    android:layout_height="wrap_content"
+                    android:hint="Tap to select Date" />
+
+            </LinearLayout>
+
+            <TextView
+
+                android:id="@+id/Txet_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reason For Leave"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/Edit_Reason"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="top"
+                android:textSize="15dp"
+                android:background="@drawable/shape"
+                android:hint="Enter reason for leave" />
+            <TextView
+                android:id="@+id/Txet_Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address during Leave"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/Edit_Address"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="top"
+                android:textSize="15dp"
+                android:background="@drawable/shape"
+                android:hint="Enter Addresss during leave" />
+
+            <TextView
+                android:id="@+id/Txet_No"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact No during Leave"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp" />
+
+            <EditText
+                android:inputType="phone"
+                android:id="@+id/Edit_No"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="top"
+                android:maxLength="10"
+                android:textSize="15dp"
+                android:background="@drawable/shape"
+                android:hint="Enter Mobile No during leave" />
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:background="@drawable/shapebutton"
+                    android:layout_width="150dp"
+                    android:text="Submit"
+                    android:id="@+id/Button_Submit"
+                    android:textColor="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:background="@drawable/shapebutton"
+                    android:layout_marginStart="12dp"
+                    android:layout_width="150dp"
+                    android:text="Reset"
+                    android:textColor="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
